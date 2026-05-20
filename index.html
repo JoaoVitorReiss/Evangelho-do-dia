@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_evangelho.css" media="screen">
+    <title>Leitura do Dia</title>
+</head>
+<body>
+    <div id="container">
+        <div class="botao-container">
+            <button id="priLeitua" class="caixa select">Primeira Leitura</button>
+            <button id="salmo" class="caixa">Salmo</button>
+            <button id="segunLeitua" class="caixa"> Segunda leitura</button>            
+            <button id="evangelho" class="caixa">Evangelho</button>
+        </div>
+        <header>
+            <h1>Leitura do Dia</h1>
+              <div id="data_form" class="mostrar_calen">
+               <input type="date" id="meuDate" value="2025-09-23">
+                <div id="dia_data">00</div>
+                <div id="info_data">
+                    <div id="mes_data">00</div>
+                    <div id="ano_data">0000</div>
+                </div>
+            </div>
+            <p class="subtitulo" id="liturgia">Reflexão e Palavra para hoje</p>
+        </header>
+
+        <section id="leitura">
+            <h3 id="leitura_dia"></h3>
+            <h3 id="titulo"></h3>
+            <article id="evang"></article>
+        </section>
+    </div>
+
+    <script type="module"src="API_Leituras.js" ></script>
+</body>
+</html>
